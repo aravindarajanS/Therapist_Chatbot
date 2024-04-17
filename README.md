@@ -8,6 +8,9 @@ This project is a conversational therapist assistant built using langchain, hugg
 - The assistant provides responses based on the conversation history.
 - Conversation history is saved to a text file for each user session.
 
+
+![Architecture Diagram](Architect.png)
+
 ## Installation
 
     
