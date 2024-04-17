@@ -10,9 +10,9 @@ This project is a conversational therapist assistant built using langchain, hugg
 
 ## Installation
 
-    ```bash
+    
     pip install -r requirements.txt
-    ```
+
 
 ## Usage
 
