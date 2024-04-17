@@ -5,14 +5,13 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer
 import torch
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(level=logging.INFO)  # Set logging level
-
+logging.basicConfig(level=logging.INFO)  
 
 def compute_and_store_embeddings(
-    model_name: str,  # Name of the pre-trained model
-    data_path: str,  # Path to the CSV file
-    output_file: str,  # Path to store the pickle file
-    batch_size: int = 32,  # Batch size for MPS optimization
+    model_name: str,  
+    data_path: str,  
+    output_file: str,  
+    batch_size: int = 32,  
     device: str = "cpu"
 ) -> None:
     """
@@ -34,8 +33,7 @@ def compute_and_store_embeddings(
 
     # Load data from CSV file using pandas
     df = pd.read_csv(data_path)
-    data = df["input"].tolist()  # Assuming "input" is the column name
-
+    data = df["input"].tolist() 
     data=data[:15000]
 
     embeddings = []
@@ -58,15 +56,7 @@ def compute_and_store_embeddings(
     with open(output_file, "wb") as f:
         pickle.dump(embeddings, f)
 
-    # Create a FAISS index for efficient retrieval (uncomment if needed)
-    # d = len(embeddings[0])  # Assuming all embeddings have the same dimension
-    # index = faiss.IndexFlatL2(d)
-    # index.add(np.asarray(embeddings))
-    # # Save the FAISS index to a file (optional)
-    # faiss.write_index(index, "my_faiss_index.faiss")
 
-
-# Example usage
 model_name = "togethercomputer/m2-bert-80M-2k-retrieval"
 data_path = "data/converse_data_processed.csv"
 output_file = "data/docs_embeddings.pkl"
