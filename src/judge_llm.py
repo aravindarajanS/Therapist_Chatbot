@@ -16,7 +16,7 @@ from modules.os_retriever_metrics import HitRate, MRR
 
 class Evaluator:
     """
-    Class containing methods for evaluating the RAG MVP module.
+    Class containing methods for evaluating the RAG module.
     """
 
     def __init__(self):
