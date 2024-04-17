@@ -20,7 +20,7 @@ This project is a conversational therapist assistant built using langchain, hugg
 
 ## Usage
 
- streamlit app is not functional as expected some errors has to be fixed, the stremlit code here is just for demonstration purpose
+ streamlit app is not functional as expected some errors has to be fixed, but he core functionality is working as expected, the streamlit code here is just for demonstration purpose
 
  ## Data
 
