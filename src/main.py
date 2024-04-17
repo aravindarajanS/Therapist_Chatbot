@@ -6,7 +6,7 @@ from langchain_core.messages import AIMessage, HumanMessage
 
 if __name__ == "__main__":
 
-    data_path = "data/converse_data_processed.csv"
+    data_path = "data/converse_data_processed_15k.csv"
     embedding_path = "data/docs_embeddings.pkl"
     data = load_data(data_path)
     processed_text = create_processed_df(data.copy())
