@@ -37,15 +37,15 @@ The above data seems to be more suitable for the task, data is processed and sto
 
 ## File Structure
 
-- `streamlit.py`: Main script containing the Streamlit app.
+- `src/streamlit.py`: Main script containing the Streamlit app.
 - `data/`: Directory containing conversation data and embeddings.
 - `utils/data_preparation.py`: script for processing data
 - `utils/text_encoder.py`: script for generating embeddings for text
-- `data_utils.py`: Module for loading and processing data.
-- `embeddings.py`: Module for loading embeddings.
-- `dialog_chain.py`: Module for creating and processing the dialogue chain.
-- `main.py`: main script of the chatbot
-- `evaluation.py`: evaluation script consist of faithfulness, correctness and MRR metrics
+- `src/data_utils.py`: Module for loading and processing data.
+- `src/embeddings.py`: Module for loading embeddings.
+- `src/dialog_chain.py`: Module for creating and processing the dialogue chain.
+- `src/main.py`: main script of the chatbot
+- `src/evaluation.py`: evaluation script consist of faithfulness, correctness and MRR metrics
 - `README.md`: This file.
 
 ## to-do
