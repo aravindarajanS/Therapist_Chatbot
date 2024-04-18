@@ -22,9 +22,12 @@ This project is a conversational therapist assistant built using langchain, hugg
 
  streamlit problem is fixed it is working as expected. Below command will run the streamlit app. When you finished enter exit in the chat. your history will be saved to a txt file with your user id as name in the data/output folder.
 
+## Run Streamlit
+
+
  streamlit run src/streamlit.py
 
- ## Data
+## Data
 
 the data used in this app is from following link
 https://huggingface.co/datasets/vibhorag101/phr_mental_therapy_dataset?row=9
@@ -45,7 +48,7 @@ The above data seems to be more suitable for the task, data is processed and sto
 - `evaluation.py`: evaluation script consist of faithfulness, correctness and MRR metrics
 - `README.md`: This file.
 
-#to-do
+## to-do
 
 - Enchance retriever output
 - make the llm response more like human , for the moment the bot is responding , but not in a conversational manner. (some prompt finetuning needed)
