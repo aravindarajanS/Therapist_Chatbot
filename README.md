@@ -15,9 +15,8 @@ This project is a conversational therapist assistant built using langchain, hugg
 ## Installation
 
 ```bash
-
 pip install -r requirements.txt
-
+```
 
 ## Usage
 
@@ -27,7 +26,7 @@ pip install -r requirements.txt
 
 ```bash
  streamlit run src/streamlit.py
-
+```
 ## Data
 
 the data used in this app is from following link
