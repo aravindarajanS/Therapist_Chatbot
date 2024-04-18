@@ -14,13 +14,15 @@ This project is a conversational therapist assistant built using langchain, hugg
 
 ## Installation
 
-    
+
     pip install -r requirements.txt
 
 
 ## Usage
 
- streamlit app is not functional as expected some errors has to be fixed, but he core functionality is working as expected, the streamlit code here is just for demonstration purpose
+ streamlit problem is fixed it is working as expected. Below command will run the streamlit app. When you finished enter exit in the chat. your history will be saved to a txt file with your user id as name in the data/output folder.
+
+ streamlit run src/streamlit.py
 
  ## Data
 
@@ -42,3 +44,10 @@ The above data seems to be more suitable for the task, data is processed and sto
 - `main.py`: main script of the chatbot
 - `evaluation.py`: evaluation script consist of faithfulness, correctness and MRR metrics
 - `README.md`: This file.
+
+#to-do
+
+- Enchance retriever output
+- make the llm response more like human , for the moment the bot is responding , but not in a conversational manner. (some prompt finetuning needed)
+- History aware response needed.
+- Run evaluation
