@@ -53,4 +53,5 @@ The above data seems to be more suitable for the task, data is processed and sto
 - Enchance retriever output
 - make the llm response more like human , for the moment the bot is responding , but not in a conversational manner. (some prompt finetuning needed)
 - History aware response needed.
-- Run evaluation
+- Publish evaluation results
+- Generate proper requirements.txt file. The current one is not generated well
