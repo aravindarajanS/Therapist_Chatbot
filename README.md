@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ## Data
 
 the data used in this app is from following link
-https://huggingface.co/datasets/vibhorag101/phr_mental_therapy_dataset?row=9
+https://huggingface.co/datasets/vibhorag101/phr_mental_therapy_dataset
 
 The above data seems to be more suitable for the task, data is processed and stored in a seperate file.
 
